@@ -8,11 +8,11 @@
     <title>Calculadora</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 
-    <script src="Calculadora.js" type="text/javascript"></script>
     <script src="Display.js" type="text/javascript"></script>
+    <script src="Calculadora.js" type="text/javascript"></script>
     <script src="index.js" type="text/javascript" defer></script>
 
 </head>
@@ -24,36 +24,37 @@
 
                 </div>
                 <div class="calculo" id="actualvalor">
-
                 </div>
+                <hr class="line">
             </div>
-            <button class="btnmax">C</button>
-            <button>&larr;</button>
-            <button class="oper">/</button>
+            <div class="btnstop">
+                <button class="suncharger">suncharger</button>
+                <button class="btnce" onclick="display.borrar()">ce</button>
+                <button class="btnce" onclick="display.borrarTodo()">c</button>
+            </div>
+            <div class="btns">
 
-            <button class="nro">7</button>
-            <button class="nro">8</button>
-            <button class="nro">9</button>
+                <button class="nro">7</button>
+                <button class="nro">8</button>
+                <button class="nro">9</button>
+                <button class="oper" value="sumar">+</button>
 
-            <button class="oper">*</button>
+                <button class="nro">4</button>
+                <button class="nro">5</button>
+                <button class="nro">6</button>
+                <button class="oper" value="restar">-</button>
 
-            <button class="nro">4</button>
-            <button class="nro">5</button>
-            <button class="nro">6</button>
+                <button class="nro">1</button>
+                <button class="nro">2</button>
+                <button class="nro">3</button>
+                <button class="oper" value="multiplicar">x</button>
 
-            <button class="oper">-</button>
+                <button class="nro">.</button>
+                <button class="nro">0</button>
+                <button class="oper" value="igual">=</button>
+                <button class="oper" value="dividir">/</button>
 
-            <button class="nro">1</button>
-            <button class="nro">2</button>
-            <button class="nro">3</button>
-
-            <button class="oper">+</button>
-
-            <button class="btnmax">0</button>
-
-            <button class="nro">.</button>
-            
-            <button class="oper">=</button>
+            </div>
         </div>
 
     </div>
